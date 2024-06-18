@@ -4,124 +4,59 @@ import Card from "../components/Card.astro";
 ---
 
 <Layout title="Aggionare Digital">
-	<main>
-		<header
-			class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-4 dark:bg-neutral-800 text-white"
-		>
-			<nav
-				class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
-				aria-label="Global"
-			>
-				<div class="flex items-center justify-between">
-					<a
-						class="flex-none text-xl me-10 font-semibold text-white"
-						href="#">Aggiornare Digital</a
-					>
-					<div class="sm:hidden">
-						<button
-							type="button"
-							class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10"
-							data-hs-collapse="#navbar-alignment"
-							aria-controls="navbar-alignment"
-							aria-label="Toggle navigation"
-						>
-							<svg
-								class="hs-collapse-open:hidden flex-shrink-0 size-4"
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
+	<header class="m-10">
+		<div class="navbar rounded-md px-5">
+			<div class="navbar-start">
+				<div class="dropdown">
+					<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-5 w-5"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							><path
 								stroke-linecap="round"
 								stroke-linejoin="round"
-								><line x1="3" x2="21" y1="6" y2="6"></line><line
-									x1="3"
-									x2="21"
-									y1="12"
-									y2="12"></line><line
-									x1="3"
-									x2="21"
-									y1="18"
-									y2="18"></line></svg
-							>
-						</button>
+								stroke-width="2"
+								d="M4 6h16M4 12h8m-8 6h16"></path></svg
+						>
 					</div>
-				</div>
-				<div
-					id="navbar-alignment"
-					class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
-				>
-					<div
-						class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5"
+					<ul
+						tabindex="0"
+						class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
 					>
-						<a
-							class="font-medium hover:font-large dark:text-neutral-400 dark:hover:text-neutral-500"
-							href="#"
-							aria-current="page">Home</a
-						>
-						<a
-							class="font-medium hover:text-gray-600 dark:text-neutral-400 dark:hover:text-neutral-500"
-							href="#">Servicios</a
-						>
-						<!-- <a
-							class="font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500"
-							href="#">Work</a
-						> -->
-						<a
-							class="font-medium hover:text-gray-600 dark:text-neutral-400 dark:hover:text-neutral-500"
-							href="#">Contacto</a
-						>
-					</div>
+						<li><a>Item 1</a></li>
+						<li><a>Item 2</a></li>
+						<li><a>Item 3</a></li>
+					</ul>
 				</div>
-			</nav>
-		</header>
-		<section>
-			<div></div>
-			<div>
-				<svg
-					class="absolute -z-10 lg:bottom-[-10px] xl:bottom-[-65px] hidden lg:block w-full"
-					viewBox="0 0 1600 1673"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-					><path
-						fill-rule="evenodd"
-						clip-rule="evenodd"
-						d="M0 1567.64C0 1567.64 170.251 1673.02 397.11 1673C497.646 1673.01 609.301 1652.34 722.19 1592.65C722.19 1592.65 1000.85 1444 1002.41 1034H1002.42V1030.77C1002.42 1030.62 1002.42 1030.46 1002.42 1030.31V1H980.142H0V821V1034V1567.64Z"
-						fill="url(#paint0_linear_5455_2)"></path><path
-						d="M1179.46 1335C1066.3 1231.32 1070.01 1037 1070.01 1037L1070.01 0H1599.79V351V718.5V1022V1177V1254V1327.5C1533.61 1458.72 1336.06 1459.86 1179.46 1335Z"
-						fill="url(#paint1_linear_5455_2)"></path><defs
-						><linearGradient
-							id="paint0_linear_5455_2"
-							x1="-84.5"
-							y1="772"
-							x2="-89.8101"
-							y2="1302.42"
-							gradientUnits="userSpaceOnUse"
-							><stop stop-color="#BA67D3" class="gradient-start"
-							></stop><stop
-								offset="1"
-								stop-color="#693FBD"
-								class="gradient-end"></stop></linearGradient
-						><linearGradient
-							id="paint1_linear_5455_2"
-							x1="1022.35"
-							y1="758.939"
-							x2="1013.77"
-							y2="1253.9"
-							gradientUnits="userSpaceOnUse"
-							><stop stop-color="#BA67D3" class="gradient-start"
-							></stop><stop
-								offset="1"
-								stop-color="#693FBD"
-								class="gradient-end"></stop></linearGradient
-						></defs
-					></svg
-				>
+				<a class="btn btn-ghost text-xl">Aggiornare Digital</a>
 			</div>
+			<div class="navbar-center hidden lg:flex">
+				<ul class="menu menu-horizontal px-1">
+					<li><a>Home</a></li>
+					<li><a>Servicios</a></li>
+					<li><a>Sobre nosotros</a></li>
+				</ul>
+			</div>
+			<div class="navbar-end">
+				<a class="btn">Contactanos</a>
+			</div>
+		</div>
+	</header>
+	<main class="w-full">
+		<section class="flex flex-col justify-center mx-20 my-5 p-20 h-screen">
+			<h1>
+				<span class="text-5xl">
+					Conseguí la pagina que querés rapido, 
+					seguro, y barato!
+				</span>
+			</h1>
+			<svg class="bannerEl" width="80" height="22" viewBox="0 0 80 22" fill="none" style="--order: 2;"><line x1="1" y1="1" x2="79" y2="1" stroke="#484A51" stroke-width="2" stroke-linecap="round"></line><line x1="17" y1="11" x2="63" y2="11" stroke="#484A51" stroke-width="2" stroke-linecap="round"></line><line x1="29" y1="21" x2="51" y2="21" stroke="#484A51" stroke-width="2" stroke-linecap="round"></line></svg>
+			<span>
+				We help businesses create fast, performance-focused, scalable & secure website using the latest and revolutionary technologies.
+			</span>
 		</section>
-
-		<ul role="list" class="link-card-grid"></ul>
 	</main>
 </Layout>
