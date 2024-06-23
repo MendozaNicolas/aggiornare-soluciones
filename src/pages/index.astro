@@ -49,21 +49,21 @@ import Layout from "../layouts/Layout.astro";
 		</div>
 	</header>
 	<main class="w-full">
-		<section class="flex flex-nowrap gap-10 mx-20 p-20 h-screen">
-			<div class="w-1/2">
+		<section class="flex flex-nowrap gap-10 mx-5 md:mx-20 md:p-20 h-screen">
+			<div class="md:w-1/2">
 				<h1>
-					<span class="text-4xl font-bold text-white">
+					<span class="text-xl md:text-4xl font-bold text-white">
 						Somos una agencia de desarrollo de software
 					</span>
 				</h1>
-				<p class="text-2xl my-5 text-white">
+				<p class="md:text-2xl my-5 text-white">
 					Ayudamos a las empresas a crear sitios web rápidos,
 					centrados en el rendimiento, escalables y seguros utilizando
 					las últimas y revolucionarias tecnologías.
 				</p>
 				<a href="#contacto" class="btn">Contactanos</a>
 			</div>
-			<div class="w-1/2 h-1/2 flex justify-center items-center">
+			<div class="hidden w-1/2 h-1/2 md:flex justify-center items-center">
 				<img
 					src="/aggiornare-soluciones/images/backgrounds/development_02.svg"
 					alt=""
@@ -72,7 +72,7 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 		</section>
 		<section
-			class="flex flex-col items-center flex-nowrap gap-10 text-center mx-10 p-10 h-screen"
+			class="flex flex-col items-center flex-nowrap gap-10 text-center mx-10 p-10 md:h-screen"
 		>
 			<h2 class="text-2xl font-bold" id="servicios">
 				Nuestros Servicios
@@ -447,7 +447,8 @@ import Layout from "../layouts/Layout.astro";
 				viewBox="0 0 1600 1673"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
-				><path
+			>
+				<path
 					fill-rule="evenodd"
 					clip-rule="evenodd"
 					d="M0 1567.64C0 1567.64 170.251 1673.02 397.11 1673C497.646 1673.01 609.301 1652.34 722.19 1592.65C722.19 1592.65 1000.85 1444 1002.41 1034H1002.42V1030.77C1002.42 1030.62 1002.42 1030.46 1002.42 1030.31V1H980.142H0V821V1034V1567.64Z"
@@ -475,6 +476,34 @@ import Layout from "../layouts/Layout.astro";
 						gradientUnits="userSpaceOnUse"
 						><stop stop-color="#BA67D3" class="gradient-start"
 						></stop><stop
+							offset="1"
+							stop-color="#693FBD"
+							class="gradient-end"></stop></linearGradient
+					></defs
+				></svg
+			>
+			<svg
+				class="absolute block lg:hidden bottom-[10rem] sm:bottom-[20rem] w-full -z-10"
+				viewBox="0 0 782 1672"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				><path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M782 0H0L0 1620.43C0 1670.87 174.983 1672 390.836 1672C606.689 1672 781.672 1670.87 781.672 1620.43H782V0Z"
+					fill="url(#paint0_linear_5455_6)"></path><defs
+					><linearGradient
+						id="paint0_linear_5455_6"
+						x1="-55.5"
+						y1="935.5"
+						x2="-66.4266"
+						y2="1597.32"
+						gradientUnits="userSpaceOnUse"
+						><stop stop-color="#BA67D3" class="gradient-start"
+						></stop><stop
+							offset="0.61475"
+							stop-color="#8A4FC6"
+							class="gradient-start"></stop><stop
 							offset="1"
 							stop-color="#693FBD"
 							class="gradient-end"></stop></linearGradient
