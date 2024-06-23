@@ -3,9 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 ---
 
-<Layout title="Aggionare Digital">
+<Layout title="Aggiornare Digital">
 	<header class="p-10">
-		<div class="navbar rounded-md shadow px-5 backdrop-blur">
+		<div class="navbar rounded-md shadow-xl border px-5 bg-white">
 			<div class="navbar-start">
 				<div class="dropdown">
 					<div
@@ -30,8 +30,8 @@ import Card from "../components/Card.astro";
 						tabindex="0"
 						class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
 					>
-						<li><a>Home</a></li>
-						<li><a>Servicios</a></li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#servicios">Servicios</a></li>
 						<li><a>Sobre nosotros</a></li>
 					</ul>
 				</div>
@@ -39,71 +39,456 @@ import Card from "../components/Card.astro";
 			</div>
 			<div class="navbar-center hidden lg:flex">
 				<ul class="menu menu-horizontal px-1">
-					<li><a>Home</a></li>
-					<li><a>Servicios</a></li>
-					<li><a>Sobre nosotros</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#servicios">Servicios</a></li>
+					<li><a href="#">Sobre nosotros</a></li>
 				</ul>
 			</div>
 			<div class="navbar-end">
-				<a class="btn">Contactanos</a>
+				<!-- <a class="btn">Contactanos</a> -->
 			</div>
 		</div>
 	</header>
 	<main class="w-full">
+		<section class="flex flex-nowrap gap-10 mx-20 p-20 h-screen">
+			<div class="w-1/2">
+				<h1>
+					<span class="text-4xl font-bold text-white">
+						Somos una agencia de desarrollo de software
+					</span>
+				</h1>
+				<p class="text-2xl my-5 text-white">
+					Ayudamos a las empresas a crear sitios web rápidos,
+					centrados en el rendimiento, escalables y seguros utilizando
+					las últimas y revolucionarias tecnologías.
+				</p>
+				<a href="#contacto" class="btn">Contactanos</a>
+			</div>
+			<div class="w-1/2 h-1/2 flex justify-center items-center">
+				<img
+					src="/images/backgrounds/development_02.svg"
+					alt=""
+					width="360"
+				/>
+			</div>
+		</section>
 		<section
-			class="flex flex-col flex-nowrap gap-10 text-center mx-20 p-20 h-screen"
+			class="flex flex-col items-center flex-nowrap gap-10 text-center mx-10 p-10 h-screen"
 		>
-			<h1>
-				<span class="text-5xl">
-					Conseguí la pagina que querés rapido, seguro, y barato!
-				</span>
-			</h1>
-			<div class="w-full flex justify-center">
-				<svg
-					class="bannerEl"
-					width="80"
-					height="22"
-					viewBox="0 0 80 22"
-					fill="none"
-					style="--order: 2;"
-					><line
-						x1="1"
-						y1="1"
-						x2="79"
-						y2="1"
-						stroke="#484A51"
-						stroke-width="2"
-						stroke-linecap="round"></line><line
-						x1="17"
-						y1="11"
-						x2="63"
-						y2="11"
-						stroke="#484A51"
-						stroke-width="2"
-						stroke-linecap="round"></line><line
-						x1="29"
-						y1="21"
-						x2="51"
-						y2="21"
-						stroke="#484A51"
-						stroke-width="2"
-						stroke-linecap="round"></line></svg
+			<h2 class="text-2xl font-bold" id="servicios">
+				Nuestros Servicios
+			</h2>
+			<div
+				class="flex flex-row justify-center items-center flex-wrap gap-0 w-full h-full"
+			>
+				<div
+					class="flex flex-col items-center justify-center gap-3 w-[350px] h-[320px] bg-white border p-10 transition-all duration-300 hover:scale-105 hover:rounded hover:shadow-lg"
+				>
+					<div
+						class="flex items-center justify-center rounded bg-[#efdff7] h-[34px] w-[34px]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							width="24"
+							height="24"
+							color="#b785ca"
+							fill="none"
+						>
+							<path
+								d="M5 9C5 5.70017 5 4.05025 6.02513 3.02513C7.05025 2 8.70017 2 12 2C15.2998 2 16.9497 2 17.9749 3.02513C19 4.05025 19 5.70017 19 9V15C19 18.2998 19 19.9497 17.9749 20.9749C16.9497 22 15.2998 22 12 22C8.70017 22 7.05025 22 6.02513 20.9749C5 19.9497 5 18.2998 5 15V9Z"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"></path>
+							<path
+								d="M11 19H13"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"></path>
+							<path
+								d="M9 2L9.089 2.53402C9.28188 3.69129 9.37832 4.26993 9.77519 4.62204C10.1892 4.98934 10.7761 5 12 5C13.2239 5 13.8108 4.98934 14.2248 4.62204C14.6217 4.26993 14.7181 3.69129 14.911 2.53402L15 2"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linejoin="round"></path>
+						</svg>
+					</div>
+					<strong> Aplicaciones Mobile </strong>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Nesciunt, error? Veritatis ab cumque obcaecati
+					</p>
+				</div>
+				<div
+					class="flex flex-col items-center justify-center gap-3 w-[350px] h-[320px] bg-white border p-10 transition-all duration-300 hover:scale-105 hover:rounded hover:shadow-lg"
+				>
+					<div
+						class="flex items-center justify-center rounded bg-[#e2e8ff] h-[34px] w-[34px]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							width="24"
+							height="24"
+							color="#6582ed"
+							fill="none"
+						>
+							<path
+								d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+								stroke="currentColor"
+								stroke-width="1.5"></path>
+							<path
+								d="M2.5 9H21.5"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linejoin="round"></path>
+							<path
+								d="M6.99981 6H7.00879"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"></path>
+							<path
+								d="M10.9998 6H11.0088"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"></path>
+						</svg>
+					</div>
+					<strong> Aplicaciones Web </strong>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Nesciunt, error? Veritatis ab cumque obcaecati
+					</p>
+				</div>
+				<div
+					class="flex flex-col items-center justify-center gap-3 w-[350px] h-[320px] bg-white border p-10 transition-all duration-300 hover:scale-105 hover:rounded hover:shadow-lg"
+				>
+					<div
+						class="flex items-center justify-center rounded bg-[#efe3e3] h-[34px] w-[34px]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							width="24"
+							height="24"
+							color="#ed7265"
+							fill="none"
+						>
+							<path
+								d="M14 2H10C6.72077 2 5.08116 2 3.91891 2.81382C3.48891 3.1149 3.1149 3.48891 2.81382 3.91891C2 5.08116 2 6.72077 2 10C2 13.2792 2 14.9188 2.81382 16.0811C3.1149 16.5111 3.48891 16.8851 3.91891 17.1862C5.08116 18 6.72077 18 10 18H14C17.2792 18 18.9188 18 20.0811 17.1862C20.5111 16.8851 20.8851 16.5111 21.1862 16.0811C22 14.9188 22 13.2792 22 10C22 6.72077 22 5.08116 21.1862 3.91891C20.8851 3.48891 20.5111 3.1149 20.0811 2.81382C18.9188 2 17.2792 2 14 2Z"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"></path>
+							<path
+								d="M11 15H13"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"></path>
+							<path
+								d="M14.5 22L14.1845 21.5811C13.4733 20.6369 13.2969 19.1944 13.7468 18M9.5 22L9.8155 21.5811C10.5267 20.6369 10.7031 19.1944 10.2532 18"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"></path>
+							<path
+								d="M7 22H17"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"></path>
+						</svg>
+					</div>
+					<strong> Aplicaciones de Escritorio </strong>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Nesciunt, error? Veritatis ab cumque obcaecati
+					</p>
+				</div>
+				<div
+					class="flex flex-col items-center justify-center gap-3 w-[350px] h-[320px] bg-white border p-10 transition-all duration-300 hover:scale-105 hover:rounded hover:shadow-lg"
+				>
+					<div
+						class="flex items-center justify-center rounded bg-[#ddedea] h-[34px] w-[34px]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							width="24"
+							height="24"
+							color="#45d7ba"
+							fill="none"
+						>
+							<path
+								d="M7 17L7 13"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"></path>
+							<path
+								d="M12 17L12 7"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"></path>
+							<path
+								d="M17 17L17 11"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"></path>
+							<path
+								d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linejoin="round"></path>
+						</svg>
+					</div>
+					<strong> Optimización SEO </strong>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Nesciunt, error? Veritatis ab cumque obcaecati
+					</p>
+				</div>
+				<div
+					class="flex flex-col items-center justify-center gap-3 w-[350px] h-[320px] bg-white border p-10 transition-all duration-300 hover:scale-105 hover:rounded hover:shadow-lg"
+				>
+					<div
+						class="flex items-center justify-center rounded bg-[#c6e6fd] h-[34px] w-[34px]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							width="24"
+							height="24"
+							color="#7abce9"
+							fill="none"
+						>
+							<path
+								d="M7.49478 13.753C10.5833 10.1644 17.5788 3.15478 20.5387 3.00445C22.3699 2.82906 18.7218 9.32547 10.0785 16.4339M11.4581 10.0449L13.7157 12.3249M3 20.8546C3.70948 18.3472 3.26187 19.5794 3.50407 16.6919C3.63306 16.2644 3.89258 14.9377 5.51358 14.2765C7.35618 13.5249 8.70698 14.6611 9.05612 15.195C10.0847 16.3102 10.2039 17.6952 9.05612 19.2774C7.9083 20.8596 4.50352 21.2527 3 20.8546Z"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"></path>
+						</svg>
+					</div>
+					<strong> Diseño personalizado </strong>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Nesciunt, error? Veritatis ab cumque obcaecati
+					</p>
+				</div>
+				<div
+					class="flex flex-col items-center justify-center gap-3 w-[350px] h-[320px] bg-white border p-10 transition-all duration-300 hover:scale-105 hover:rounded hover:shadow-lg"
+				>
+					<div
+						class="flex items-center justify-center rounded bg-[#ffe0e3] h-[34px] w-[34px]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							width="24"
+							height="24"
+							color="#c2303e"
+							fill="none"
+						>
+							<path
+								d="M17.4776 10.0001C17.485 10 17.4925 10 17.5 10C19.9853 10 22 12.0147 22 14.5C22 16.9853 19.9853 19 17.5 19H7C4.23858 19 2 16.7614 2 14C2 11.4003 3.98398 9.26407 6.52042 9.0227M17.4776 10.0001C17.4924 9.83536 17.5 9.66856 17.5 9.5C17.5 6.46243 15.0376 4 12 4C9.12324 4 6.76233 6.20862 6.52042 9.0227M17.4776 10.0001C17.3753 11.1345 16.9286 12.1696 16.2428 13M6.52042 9.0227C6.67826 9.00768 6.83823 9 7 9C8.12582 9 9.16474 9.37209 10.0005 10"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"></path>
+						</svg>
+					</div>
+					<strong> Administración del hosting </strong>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Nesciunt, error? Veritatis ab cumque obcaecati
+					</p>
+				</div>
+			</div>
+		</section>
+		<section
+			class="blob w-full h-screen flex flex-col justify-center items-center pt-10"
+		>
+			<h2 id="contacto">
+				<span class="text-4xl font-bold text-white text-center mb-5"
+					>Estemos en contacto</span
+				>
+			</h2>
+			<form
+				action=""
+				class="flex flex-col items-center gap-5 bg-white shadow-xl border rounded-lg p-10"
+			>
+				<label class="input input-bordered flex items-center gap-2">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						width="24"
+						height="24"
+						color="#000000"
+						fill="none"
+					>
+						<path
+							d="M5.18007 15.2964C3.92249 16.0335 0.625213 17.5386 2.63348 19.422C3.6145 20.342 4.7071 21 6.08077 21H13.9192C15.2929 21 16.3855 20.342 17.3665 19.422C19.3748 17.5386 16.0775 16.0335 14.8199 15.2964C11.8709 13.5679 8.12906 13.5679 5.18007 15.2964Z"
+							stroke="currentColor"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+						<path
+							d="M14 7C14 9.20914 12.2091 11 10 11C7.79086 11 6 9.20914 6 7C6 4.79086 7.79086 3 10 3C12.2091 3 14 4.79086 14 7Z"
+							stroke="currentColor"
+							stroke-width="1.5"></path>
+						<path
+							d="M22 6.5L17 6.5"
+							stroke="currentColor"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+					</svg>
+					<input type="text" class="grow" placeholder="Nombre" />
+				</label>
+				<label class="input input-bordered flex items-center gap-2">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						width="24"
+						height="24"
+						color="#000000"
+						fill="none"
+					>
+						<path
+							d="M12.5 22H6.59087C5.04549 22 3.81631 21.248 2.71266 20.1966C0.453365 18.0441 4.1628 16.324 5.57757 15.4816C7.67837 14.2307 10.1368 13.7719 12.5 14.1052C13.3575 14.2261 14.1926 14.4514 15 14.7809"
+							stroke="currentColor"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+						<path
+							d="M15.5 6.5C15.5 8.98528 13.4853 11 11 11C8.51472 11 6.5 8.98528 6.5 6.5C6.5 4.01472 8.51472 2 11 2C13.4853 2 15.5 4.01472 15.5 6.5Z"
+							stroke="currentColor"
+							stroke-width="1.5"></path>
+						<path
+							d="M15 18.5H22"
+							stroke="currentColor"
+							stroke-width="1.5"
+							stroke-linecap="round"></path>
+					</svg>
+					<input type="text" class="grow" placeholder="Apellido" />
+				</label>
+				<label class="input input-bordered flex items-center gap-2">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						width="24"
+						height="24"
+						color="#000000"
+						fill="none"
+					>
+						<path
+							d="M2 6L8.91302 9.91697C11.4616 11.361 12.5384 11.361 15.087 9.91697L22 6"
+							stroke="currentColor"
+							stroke-width="1.5"
+							stroke-linejoin="round"></path>
+						<path
+							d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"
+							stroke="currentColor"
+							stroke-width="1.5"
+							stroke-linejoin="round"></path>
+					</svg>
+					<input type="text" class="grow" placeholder="Email" />
+				</label>
+
+				<label class="input input-bordered flex items-center gap-2">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						width="24"
+						height="24"
+						color="#000000"
+						fill="none"
+					>
+						<path
+							d="M12.5 3.00372C11.6049 2.99039 10.7047 3.01289 9.8294 3.07107C5.64639 3.34913 2.31441 6.72838 2.04024 10.9707C1.98659 11.8009 1.98659 12.6607 2.04024 13.4909C2.1401 15.036 2.82343 16.4666 3.62791 17.6746C4.09501 18.5203 3.78674 19.5758 3.30021 20.4978C2.94941 21.1626 2.77401 21.495 2.91484 21.7351C3.05568 21.9752 3.37026 21.9829 3.99943 21.9982C5.24367 22.0285 6.08268 21.6757 6.74868 21.1846C7.1264 20.9061 7.31527 20.7668 7.44544 20.7508C7.5756 20.7348 7.83177 20.8403 8.34401 21.0513C8.8044 21.2409 9.33896 21.3579 9.8294 21.3905C11.2536 21.4852 12.7435 21.4854 14.1706 21.3905C18.3536 21.1125 21.6856 17.7332 21.9598 13.4909C22.0021 12.836 22.011 12.1627 21.9866 11.5"
+							stroke="currentColor"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+						<path
+							d="M8.5 15H15.5M8.5 10H12"
+							stroke="currentColor"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+						<path
+							d="M15 5.5H22M18.5 2L18.5 9"
+							stroke="currentColor"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+					</svg>
+					<input type="text" class="grow" placeholder="Mensaje" />
+				</label>
+				<button class="btn btn-outline btn-wide" type="submit"
+					>Enviar mensaje</button
+				>
+			</form>
+		</section>
+		<footer class="flex align-center bg-[#6d41be] px-20 py-5 text-white">
+			<div class="grow">
+				<a href="#" class="btn btn-ghost"
+					>Aggiornare Digital. Hecho con amor ❤</a
 				>
 			</div>
 
-			<span class="text-2xl">
-				Ayudamos a las empresas a crear sitios web rápidos, centrados en el rendimiento, escalables y seguros utilizando las últimas y revolucionarias tecnologías.
-			</span>
-			<div class="w-full">
-				<a href="" class="btn btn-outline btn-accent">Contactanos</a>
-				<a href="" class="btn btn-outline">Mirá nuestros servicios</a>
+			<div>
+				<a href="#" class="btn btn-ghost">Terminos y condiciones</a>
+				<a href="#" class="btn btn-ghost">Política de privacidad</a>
 			</div>
-		</section>
-		<section
-			class="flex flex-col flex-nowrap gap-10 text-center mx-20 p-20 h-screen"
-		>
-		<h2 class="text-2xl font-bold">Nuestros Servicios</h2>
-		</section>
+		</footer>
+		<div>
+			<svg
+				class="absolute -z-10 lg:bottom-[-10px] xl:bottom-[-65px] hidden lg:block w-full"
+				viewBox="0 0 1600 1673"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				><path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M0 1567.64C0 1567.64 170.251 1673.02 397.11 1673C497.646 1673.01 609.301 1652.34 722.19 1592.65C722.19 1592.65 1000.85 1444 1002.41 1034H1002.42V1030.77C1002.42 1030.62 1002.42 1030.46 1002.42 1030.31V1H980.142H0V821V1034V1567.64Z"
+					fill="url(#paint0_linear_5455_2)"></path><path
+					d="M1179.46 1335C1066.3 1231.32 1070.01 1037 1070.01 1037L1070.01 0H1599.79V351V718.5V1022V1177V1254V1327.5C1533.61 1458.72 1336.06 1459.86 1179.46 1335Z"
+					fill="url(#paint1_linear_5455_2)"></path><defs
+					><linearGradient
+						id="paint0_linear_5455_2"
+						x1="-84.5"
+						y1="772"
+						x2="-89.8101"
+						y2="1302.42"
+						gradientUnits="userSpaceOnUse"
+						><stop stop-color="#BA67D3" class="gradient-start"
+						></stop><stop
+							offset="1"
+							stop-color="#693FBD"
+							class="gradient-end"></stop></linearGradient
+					><linearGradient
+						id="paint1_linear_5455_2"
+						x1="1022.35"
+						y1="758.939"
+						x2="1013.77"
+						y2="1253.9"
+						gradientUnits="userSpaceOnUse"
+						><stop stop-color="#BA67D3" class="gradient-start"
+						></stop><stop
+							offset="1"
+							stop-color="#693FBD"
+							class="gradient-end"></stop></linearGradient
+					></defs
+				></svg
+			>
+		</div>
 	</main>
 </Layout>
 
+<style>
+	.blob {
+		background-image: url('data:image/svg+xml,<svg width="1440" height="997" viewBox="0 0 1440 997" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_32_987)"><path d="M2294.77 1326.25C1803.5 47 257.711 -11.0779 -50.571 14.0435L-1008 1809.4L1286.47 3033C1535.67 2572.08 2086.2 1732.65 2294.77 1326.25Z" fill="%236d41be"/></g><defs><clipPath id="clip0_32_987"><rect width="1440" height="997" fill="white"/></clipPath></defs></svg>');
+		background-repeat: no-repeat;
+	}
+</style>
