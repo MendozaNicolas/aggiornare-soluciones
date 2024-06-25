@@ -1,24 +1,52 @@
 ---
 interface Props {
 	title: string;
+	description: string;
+	url: string;
 }
 
-const { title } = Astro.props;
+const { title, description, url } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={url} />
+		<meta
+			property="og:image"
+			content="https://ia.media-imdb.com/images/rock.jpg"
+		/>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="canonical" href={url} />
 		<meta name="generator" content={Astro.generator} />
-		<script
-			is:inline
-			src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
-		></script>
+		<meta name="twitter:card" content="summary_large_image" />
+		<!-- <meta name="twitter:site" content="@digitalocean" /> -->
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta
+			name="twitter:image"
+			content="https://html.sammy-codes.com/images/large-profile.jpg"
+		/>
 		<title>{title}</title>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"name": "Aggiornare Digital",
+				"url": "https://estudioceibo.com.ar",
+				"potentialAction": {
+					"@type": "SearchAction",
+					"target": "https://estudioceibo.com.ar/search?q={search_term_string}",
+					"query-input": "required name=search_term_string"
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<slot />

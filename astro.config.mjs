@@ -5,6 +5,5 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://mendozanicolas.github.io',
-  base: 'aggiornare-soluciones',
+  site: 'https://estudioceibo.com.ar',
 });
